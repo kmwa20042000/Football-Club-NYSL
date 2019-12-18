@@ -1,0 +1,561 @@
+body {
+    margin: 0%
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgb(108, 138, 125);
+    background: linear-gradient(90deg, rgba(9, 121, 74, 1) 48%, rgba(0, 255, 62, 1) 100%);
+}
+
+.nav-list-right {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 20px
+}
+
+.active {
+    color: rgb(28, 173, 28) !important;
+    border-bottom: 1px !important;
+}
+
+.logo-right {
+    display: absolute;
+
+    margin-left: 100px;
+}
+
+.nav-wrapper>.nav-list-right>div {
+    margin-right: 30px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.nav-link-wrapper {
+    height: 20px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 1s;
+}
+
+.nav-link-wrapper a {
+    color: #083f08;
+    text-decoration: none;
+    transition: color .5s;
+    align-content: center;
+}
+
+.nav-link-wrapper :hover {
+    border-bottom: 1.5px solid rgb(197, 191, 191);
+}
+
+.nav-link-wrapper a:hover {
+    color: rgb(28, 173, 28);
+}
+
+.nav-link-wrapper-active {
+    color: darkgreen;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 350px auto 350px;
+    grid-template-rows: 1fr;
+}
+
+.banner {
+    border-radius: 3px;
+    grid-area: 1/2/2/3;
+    
+}
+.banner>img{
+    width:80%;
+    height: 45%;
+    margin-left:100px
+}
+
+
+
+.contactbanner{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 4;
+    grid-row-end: 1;
+    font-family: 'Roboto', sans-serif;
+    border: 16px;
+    background-color: #D3D57C;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 4px;
+    margin-top: -20px;
+    margin-bottom:30px
+}
+.aboutusbanner {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 4;
+    grid-row-end: 3;
+    font-family: 'Roboto', sans-serif;
+    border: 16px;
+    background-color: #D3D57C;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 4px;
+    margin-top: -20px;
+}
+
+.textbox-game {
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    border: 16px;
+    background-color: #D3D57C;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 4px;
+    margin-top: -20px;
+}
+
+.textbox {
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    border: px;
+    background-color: #D3D57C;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 4px;
+    grid-column-start: 2;
+    width:80%;
+    margin-left:100px
+}
+
+.schedule {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    margin-left:100px
+}
+
+.dates {
+    font-size: larger;
+    font-weight: bold;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.events {
+    text-indent: 25px;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+p.indent{
+    text-indent: 1rem;
+}
+.schedule>li.dates>li.events {
+    margin-top: 11px;
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: 350px auto 350px;
+    grid-template-rows: auto;
+}
+
+.textbox-wrapper {
+    display: grid;
+    grid-column-start: 2;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.contact_form {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border-radius: 5px;
+    background-color: #FFBA49;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-weight: bolder;
+}
+
+input[type=submit] {
+    background-color: rgb(47, 105, 76);
+    color: white;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 3px;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #1a5f19;
+    cursor: pointer;
+}
+
+.image1 {
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin-left: 12px;
+    border-radius: 3px;
+}
+
+.abouttitle {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.aboutwrapper {
+    display: grid;
+    grid-template-columns: 350px auto 350px;
+    grid-template-rows: 32px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.abouttext {
+    grid-column-start: 2;
+    margin-top:30px
+}
+
+.imageabout {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    display: grid;
+    margin-left: 20px;
+    margin-top: 90px
+}
+
+.footerall {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1px;
+    background: rgb(9, 121, 74);
+    background: linear-gradient(90deg, rgba(9, 121, 74, 1) 48%, rgba(0, 255, 62, 1) 100%);
+    font-family: fantasy;
+    text-align: center;
+    font-size: smaller;
+}
+
+ol.number, ol.alphabet, ol.square, .refs, .confis, .allplay, .numplayer{
+    line-height: 1.6;
+}
+
+.footerall-index {
+    position: relative;
+    width: 100%;
+    margin-bottom: -50px;
+    padding: 1px;
+    background: rgb(9, 121, 74);
+    background: linear-gradient(90deg, rgba(9, 121, 74, 1) 48%, rgba(0, 255, 62, 1) 100%);
+    font-family: fantasy;
+    text-align: center;
+    font-size: medium;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-gallery {
+    position: absolute;
+    padding: 1px;
+    width: 100%;
+    background: rgb(9, 121, 74);
+    background: linear-gradient(90deg, rgba(9, 121, 74, 1) 48%, rgba(0, 255, 62, 1) 100%);
+    font-family: fantasy;
+    text-align: center;
+    font-size: smaller;
+}
+
+.image-wrapper>div {
+    padding: 10px;
+
+}
+
+.image-wrapper {
+    flex: 1 0 auto;
+}
+
+.footer-wrap1 {
+    flex: none;
+}
+
+
+.rules-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(auto 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    min-height: 100vh;
+}
+
+.ruletitle {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: auto;
+    text-align: center;
+}
+
+.rules-wrapper>div {
+    grid-column-start: 2;
+    grid-row-end: auto;
+}
+li.sportmanship {
+    line-height: 2em;
+}
+.footerall-rules {
+    width: 100%;
+    padding: 1px;
+    background: rgb(9, 121, 74);
+    background: linear-gradient(90deg, rgba(9, 121, 74, 1) 48%, rgba(0, 255, 62, 1) 100%);
+    font-family: fantasy;
+    text-align: center;
+    font-size: smaller;
+}
+li.lineheight{
+    line-height: 2em;
+}
+section.table {
+    display: grid;
+    grid-template-columns: .5fr repeat(2, 1fr) .5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+    justify-content: space-around;
+}
+
+table.september {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+table.october {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+table.gamelocation {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    line-height: 250%;
+}
+
+.gameinfotext {
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.gmap {
+    grid-area: 3/3/4/4;
+}
+
+.gameinfo-wrapper {
+    display: grid;
+    grid-template-columns: .5fr repeat(2, 1fr) .5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    row-gap: 20px;
+}
+
+.textbox-gameinfo {
+    grid-area: 2/2/3;
+    font-size: xx-large;
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: .3fr repeat(auto, .5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+/*.playerinfo{
+    grid-area: 2/2/3/3;
+}
+.school{
+    grid-area: 3/2/4/3
+}
+form.position{
+    grid-area: 4/2/5/3
+}
+.permission{
+    grid-area: 6/2/6/3
+}
+.sizes{
+    grid-area: 5/2/6/3;
+}
+*/
+.playerinfo {
+    grid-area: 2/2/6/3
+}
+
+.permissoin {
+    text-align: center;
+    justify-items: center;
+}
+
+.regheader {
+    grid-area: 1/1/2/4;
+    font-family: 'Roboto', sans-serif;
+    border: 20px;
+    background-color: #D3D57C;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 4px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nameform {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    grid-area: 9/1/10/4;
+    padding: 1px;
+    background: rgb(9, 121, 74);
+    background: linear-gradient(90deg, rgba(9, 121, 74, 1) 48%, rgba(0, 255, 62, 1) 100%);
+    font-family: fantasy;
+    text-align: center;
+    font-size: smaller;
+    margin-top: 5%
+}
+
+.submitbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.button>button {
+    font-weight: bolder;
+    padding: 10px;
+}
+
+/* wrapper for the small elements in the form */
+
+.wrap_bdaytophone {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrap_bdaytophone>div {
+    height: 50px;
+}
+
+th.month {
+    padding: 10px;
+    text-align: left;
+    block-size: 14px;
+}
+
+th.teams {
+    text-align: left;
+}
+
+th.location {
+    text-align: left;
+}
+
+th.times {
+    text-align: left;
+}
+
+th.month,
+th.teams,
+th.location,
+th.times {
+    background-color: rgb(209, 209, 209);
+    border-bottom: .5px solid rgb(124, 122, 122);
+}
+
+tr.gameinfo:hover {
+    background-color: rgb(223, 223, 223);
+
+}
+
+tr.gameinfo>td {
+    border-bottom: .5px solid rgb(200, 198, 198);
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.gmap {
+    margin-top: 30px
+}
+
+tr.gamelocationinfo {
+    font-family: 'Roboto Slab', serif;
+}
+
+.gameinfotext>p {
+    font-family: 'Roboto Slab', serif;
+}
+
+.footer-rule1 {
+    grid-column: col 1/ span 3;
+    padding: 5px;
+    background: rgb(9, 121, 74);
+    background: linear-gradient(90deg, rgba(9, 121, 74, 1) 48%, rgba(0, 255, 62, 1) 100%);
+    font-family: fantasy;
+    text-align: center;
+    font-size: medium;
+}
+
+.footerall-contact {
+    padding: 5px;
+    font-family: fantasy;
+    text-align: center;
+    font-size: medium;
+}
+
+.footercont1 {
+    position: relative;
+    padding: 5px;
+    background: rgb(9, 121, 74);
+    background: linear-gradient(90deg, rgba(9, 121, 74, 1) 48%, rgba(0, 255, 62, 1) 100%);
+    font-family: fantasy;
+    text-align: center;
+    font-size: medium;
+    margin-top: 230px;
+}
+
+.footerall-contact{
+    padding: 5px;
+    background: rgb(9, 121, 74);
+    background: linear-gradient(90deg, rgba(9, 121, 74, 1) 48%, rgba(0, 255, 62, 1) 100%);
+    font-family: fantasy;
+    text-align: center;
+    font-size: medium;
+    margin-top: 170px;
+}

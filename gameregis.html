@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration | NYSL </title>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Stylesheet/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav-wrapper">
+            <div class="nav-list-right">
+                <div class="nav-link-wrapper">
+                    <a href="./index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="./contact.html">Contact</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="./about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="./Rules-of-Play-Policies.html">Rules</a>
+                </div>
+                <div class="nav-link-wrapper">
+                        <a href="./game_schedule.html">schedule</a>
+                </div>
+                <div class="reg">
+                        <div class="nav-link-wrapper">
+                                <a class="active" href="./gameregis.html">Registration</a>
+                        </div>
+                </div>
+
+            </div>
+            <div class="logo-right">
+                    <a href="./index.html"><img src="./Images/nysl_logo.png" alt="logo" width="20%"></a>
+                </div>
+        </div>
+    
+        <br>
+    <div class="form-wrapper">
+        <div class="regheader">
+            <h2>Regsitration Form</h2>
+        </div>
+    <br>
+
+        <div class="playerinfo">
+        <form id=nameform action="./show_data.html" method="GET">
+            <fieldset class="info">
+                <label>Player's First Name
+                    <input type="text" name="fname" placeholder="First Name" required>
+                </label>
+                <label>Last name
+                    <input type="text" name="lname" placeholder="Last Name" required>
+                </label>
+                <label>Street Address
+                    <input type="text" name="StName" placeholder="Address">
+                </label>
+
+                <lable>City
+                    <input type="text" name="city" placeholder="City">
+                </lable>
+                <label>Zipcode
+                    <input type="number" name="zip Code" placeholder="Zip Code" minlength="5" maxlength="5" required>
+                </label>
+                <br>
+                <br>
+                <label> Email:
+                        <input type="email" name="email" value="" placeholder="Email" required>
+                </label>
+                <br>
+        <div class="wrap_bdaytophone">
+            <div class="birthday">    
+                <label >Birth Date: </label>   <input type="date" name="Bday">
+                <br>
+                </div>
+                <div class="gender">
+                <label> Gender :</label>
+                    <input type="radio" name="gender" value="female">Female <input type="radio" name="gender"
+                        value="male">Male
+                </div>
+                <br>
+            <div class="grade">   
+                <label> Grade: </label>
+                    <input type="radio" name="grade" value="Pre-School">Pre-School
+                    <input type="radio" name="grade" value="1st ">1st
+                    <input type="radio" name="grade" value="2nd">2nd
+                    <input type="radio" name="grade" value="3rd">3rd
+                    <input type="radio" name="grade" value="4th">4th
+                    <input type="radio" name="grade" value="5th">5th
+            </div>
+            <div class="phone">  
+                <label>Contact Phone:</label>
+                    <input type="number" name="phone" value="phone" required>
+            </div>       
+        </div>
+            
+        <div class="school">
+                <h3>Which elementary schools do you live near?</h3>
+                <p><b>First Closest School:</p></b>
+                    <select name="1stclosestschool">
+                        <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                        <option value="Greenbay">Greenbay</option>
+                        <option value=" Howard A Yeager "> Howard A Yeager </option>
+                        <option value=" Marjorie P Hart"> Marjorie P Hart </option>
+                        <option value="North Elementary"> North Elementary </option>
+                        <option value="South Elementary"> South Elementary </option>
+                    </select>
+                 <h3>Second Closest School:</h3>
+                    <select name="2ndclosestschool">
+                        <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                        <option value="Greenbay">Greenbay</option>
+                        <option value=" Howard A Yeager "> Howard A Yeager </option>
+                        <option value=" Marjorie P Hart"> Marjorie P Hart </option>
+                        <option value="North Elementary"> North Elementary </option>
+                        <option value="South Elementary"> South Elementary </option>
+                    </select>
+
+        </div>
+        <div action="#" class="position">
+                <lable>
+                    <h3><b>What position(s) do you normally play?</b></h3>
+                    <input type="checkbox" name="Forward" value="forward">Forward
+                </lable>
+                <lable>
+                    <input type="checkbox" name="Midfielder" value="Midfielder">Midfielder
+                </lable>
+                <lable>
+                    <input type="checkbox" name="Defense" value="Defense">Defense
+                </lable>
+                <lable>
+                    <input type="checkbox" name="Keeper" value="Keeper">Goalie
+                </lable>
+                <lable>
+                    <h3><b>What position(s) do you want to play?</b></h3>
+                    <input type="checkbox" name="Forward" value="forward">Forward
+                </lable>
+                <lable>
+                    <input type="checkbox" name="Midfielder" value="Midfielder">Midfielder
+                </lable>
+                <lable>
+                    <input type="checkbox" name="Defense" value="Defense">Defense
+                </lable>
+                <lable>
+                    <input type="checkbox" name="Keeper" value="Keeper">Goalie
+                </lable>            
+                <h3>Uniform Sizes</h3>
+                <lable> 
+                    <input type="checkbox" name="haveuniform" value="notneeded"> Already Have a Uniform
+                </lable>
+                <p><b>Jersey Size:</p></b>
+                    <select name="jersey Size">
+                        <option value="Youth Small ">Youth Small </option>
+                        <option value="Youth Medium">Youth Medium</option>
+                        <option value="Youth Large"> Youth Large </option>
+                        <option value="Small ">Small</option>
+                        <option value="Medium ">Medium</option>
+                        <option value="Large ">Large</option>
+                        <option value="Extra-Large ">Extra-Large </option>
+                    </select>
+                <p><b>Shorts size:</p></b>
+                    <select name="jersey Size">
+                        <option value="Youth Small ">Youth Small </option>
+                        <option value="Youth Medium">Youth Medium</option>
+                        <option value="Youth Large"> Youth Large </option>
+                        <option value="Small ">Small</option>
+                        <option value="Medium ">Medium</option>
+                        <option value="Large ">Large</option>
+                        <option value="Extra-Large ">Extra-Large </option>
+                    </select>
+            </div>    
+            <div class="permission">
+            <h3>Permission to Play</h3>
+            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation. By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms. </p>
+            <lable>
+                    <b>I Agree to the Terms and Conditions </b> <input type="checkbox" name="agree" value="agree" required> 
+            </lable>
+            <br>
+            <br>
+            <lable>
+                    Signature Required    <input type="text" name="fullname" placeholder=" Sign Full Name Here"required> 
+            </lable>
+            <lable>
+                    Dates:  <br><input type="date" name="datesign" placeholder=""required> 
+            </lable>
+        </form>   
+        <br>
+    <br>
+        <div class="submitbutton">
+            <div class="button">
+        <button type="submit" form="nameform" value="Submit">Submit</button></button>
+    </div>
+        </div>
+</fieldset>
+    </div>
+    <footer>
+            <div class="footerreg">
+                    <p class="content">© 2019 NYSL Football Club</p>
+            </div>
+        </footer>  
+</body>
